@@ -1,0 +1,19 @@
+.cardList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: white;
+    border: 5px solid #2f3842;
+    border-radius: 1rem;
+    padding: 1.6rem 1.5rem;
+    width: 270px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

@@ -1,0 +1,13 @@
+.journeyContainer {
+    margin: 4em 0 0;
+    padding: 3rem 1.5rem;
+    background: linear-gradient(135deg, #a2d4f3d5, #f5c2e7b2);
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}

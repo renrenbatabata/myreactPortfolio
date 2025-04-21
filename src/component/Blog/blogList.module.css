@@ -1,0 +1,17 @@
+.blog {
+    padding: 10em 0;
+    box-sizing: border-box;
+}
+
+.ListSide {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2em;
+}

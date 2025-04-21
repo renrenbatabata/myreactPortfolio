@@ -1,0 +1,45 @@
+.contact {
+    margin: 4em auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    flex-wrap: wrap;
+}
+
+.contact a {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+}
+
+.contact a:hover {
+    transform: scale(1.4);
+    opacity: 0.8;
+}
+
+.contact svg {
+    width: 60px;
+    height: 60px;
+    fill: #ffffff;
+}
+
+.contact a {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 600px) {
+    .contact svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact {
+        gap: 2em;
+    }
+}

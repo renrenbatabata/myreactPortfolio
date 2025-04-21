@@ -1,0 +1,43 @@
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: 300px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.li:hover {
+    transform: translateY(-5px);
+    /* ホバー時のエフェクト */
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 1rem;
+}
+
+.imageWrapper {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
