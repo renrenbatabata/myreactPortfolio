@@ -1,0 +1,49 @@
+.p {
+    line-height: 1.7em;
+    margin-top: 1em;
+}
+
+.heroTitle {
+    font-size: 2em;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    font-size: 1em;
+    max-width: 50vw;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+
+.container {
+    margin: 5em 0 2em;
+    height: 80vh;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .testimonial {
+        margin: auto;
+        align-items: center;
+        font-size: 1.5em;
+        padding: 1rem;
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    .container {
+        margin: 5em 0 5em;
+        height: 100vh;
+    }
+
+}
