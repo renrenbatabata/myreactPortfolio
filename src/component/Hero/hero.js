@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./card";
-import "./hero.scss";
+import './hero.module.scss';
 import Style from "../../styles/utils.module.css"
 export default function Hero() {
     return (
