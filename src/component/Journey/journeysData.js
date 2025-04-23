@@ -3,7 +3,7 @@ const confirmedJourneys = [
     {
         "title": "れんれん生誕",
         "date": "2004-06-01",
-        "timelineContent": "この日はとっても特別な日でした。"
+        "timelineContent": "大雨の嵐の中、産声をあげたそうです。"
     },
     {
         "title": "高校生のコロナ禍。パソコンゲームにハマる。",
@@ -16,7 +16,7 @@ const confirmedJourneys = [
         "timelineContent": "プログラミングの世界に初めて触れ、コーディングに興味を持ち始めました。"
     },
     {
-        "title": "中学生にプログラミング教室を開催する",
+        "title": "中学生にプログラミング教室を開催する。",
         "date": "2023-07-01",
         "timelineContent": "中学生向けにプログラミングの楽しさを伝える教室を自ら企画・実施しました。"
     },
@@ -38,7 +38,7 @@ const confirmedJourneys = [
     {
         "title": "基本情報技術者試験に合格",
         "date": "2023-11-01",
-        "timelineContent": "前日技術書展に行き終電を逃してしまい、オールでの受験だったが、無事合格をした"
+        "timelineContent": "前日技術書展に行き終電を逃してしまい、オールでの受験だったが、無事合格をしました。"
     },
     {
         "title": "初めてのハッカソンで「【Chrome拡張機能】Webページにクレヨンしんちゃんを！」作る。",
@@ -58,7 +58,7 @@ const confirmedJourneys = [
     {
         "title": "クリスマスにSECONに参加し、クリぼっちを回避した。",
         "date": "2023-12-25",
-        "timelineContent": "セキュリティカンファレンスSECONに参加し、学びとつながりを得たクリスマス。"
+        "timelineContent": "セキュリティカンファレンスSECONに参加し、学びとつながりを得たクリスマスになりました。"
     },
     {
         "title": "初海外に留学に行く！in フィリピン",
@@ -73,12 +73,12 @@ const confirmedJourneys = [
     {
         "title": "Reactを初めて触る",
         "date": "2025-04-01",
-        "timelineContent": "コンポーネントの便利さに感動。学習しつつ、このポートフォリオサイトを作成する。"
+        "timelineContent": "コンポーネントの便利さに感動。学習しつつ、このポートフォリオサイトを作成しました。"
     },
     {
         "title": "DXゼミに入る",
         "date": "2025-04-01",
-        "timelineContent": "新しい環境に心を躍らせる"
+        "timelineContent": "新しい環境に心を躍らせています！"
     }
 ];
 

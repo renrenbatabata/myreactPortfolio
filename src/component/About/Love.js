@@ -8,7 +8,7 @@ const loves = [
   "Music",
   "Travel",
   "Friends",
-  "Overwatch",
+  "Game",
   "Alcohol",
 ];
 
