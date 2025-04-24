@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const loves = [
   "Bread",
-  "SpicyFood",
+  "Spicy Food",
   "Music",
   "Travel",
   "Friends",

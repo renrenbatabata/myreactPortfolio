@@ -6,22 +6,21 @@ function BlogCard({ blogs }) {
     return (
         <ul className={Styles.ul}>
             {blogs.map((blog) => (
-                <>
+                <li key={blog.id} >
+
                     <Link href={`/blogs/${blog.id}`} className={Styles.link}>
-                        <li key={blog.id} >
-                            <div className={Styles.imageWrapper}>
-                                <Image
-                                    src={blog.eyecatch.url}
-                                    alt="eyecatch"
-                                    layout="responsive"
-                                    width={80}
-                                    height={50}
-                                />
-                            </div>
-                            {blog.title}
-                        </li>
+                        <div className={Styles.imageWrapper}>
+                            <Image
+                                src={blog.eyecatch.url}
+                                alt="eyecatch"
+                                layout="responsive"
+                                width={80}
+                                height={50}
+                            />
+                        </div>
+                        {blog.title}
                     </Link>
-                </>
+                </li>
             ))}
 
         </ul>
