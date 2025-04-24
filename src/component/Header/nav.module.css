@@ -16,6 +16,10 @@
     margin: 0 25px;
 }
 
+.ul li a:hover {
+    color: rgb(255, 139, 209);
+}
+
 .ul li a {
     text-decoration: none;
     color: white;
