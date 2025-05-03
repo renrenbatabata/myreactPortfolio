@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import styles from "./card.module.css"
+import styles from "./card.module.css";
 
 export default function Card({ image, children }) {
     const cardRef = useRef(null);
@@ -7,15 +7,22 @@ export default function Card({ image, children }) {
     const [size, setSize] = useState({ width: 0, height: 0 });
 
     useEffect(() => {
-        if (cardRef.current) {
-            setSize({
-                width: cardRef.current.offsetWidth,
-                height: cardRef.current.offsetHeight
-            });
-        }
+        const resizeObserver = new ResizeObserver(() => {
+            if (cardRef.current) {
+                setSize({
+                    width: cardRef.current.offsetWidth,
+                    height: cardRef.current.offsetHeight
+                });
+            }
+        });
+        if (cardRef.current) resizeObserver.observe(cardRef.current);
+
+        return () => resizeObserver.disconnect();
     }, []);
 
     const handleMouseMove = (e) => {
+        if (!size.width || !size.height) return;
+
         const rect = cardRef.current.getBoundingClientRect();
         setMouse({
             x: e.clientX - rect.left - size.width / 2,

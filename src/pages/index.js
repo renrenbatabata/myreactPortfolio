@@ -7,15 +7,10 @@ import Footer from "@/component/Footer/footer"
 import Hero from "@/component/Hero/hero"
 import About from "@/component/About/about"
 
-// SSG
-export const getStaticProps = async () => {
-  const blogData = await client.get({
-    endpoint: 'blogs',
-  })
-
-  const journeyData = await client.get({
-    endpoint: 'journeys',
-  })
+// SSR
+export const getServerSideProps = async () => {
+  const blogData = await client.get({ endpoint: 'blogs' })
+  const journeyData = await client.get({ endpoint: 'journeys' })
 
   return {
     props: {

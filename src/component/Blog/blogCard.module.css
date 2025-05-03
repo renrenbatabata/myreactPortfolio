@@ -4,40 +4,58 @@
     gap: 1rem;
     list-style: none;
     padding: 0;
-    margin: 0;
-}
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
 
-.li {
-    flex: 1 1 calc(33.333% - 1rem);
-    max-width: 300px;
-    box-sizing: border-box;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease;
-}
-
-.li:hover {
-    transform: translateY(-5px);
-    /* ホバー時のエフェクト */
 }
 
 .link {
+    flex: 1 1 calc(100% - 1rem);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 1rem;
+    padding: 4rem;
 }
+
+
+.link:hover {
+    transform: translateY(-5px);
+}
+
+
 
 .imageWrapper {
     width: 100%;
     height: auto;
+    text-align: center;
 }
 
-.title {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    text-align: center;
-    font-weight: bold;
+.imageWrapper img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+
+/* タブレット以上：2列 */
+@media (min-width: 768px) {
+    .li {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+
+/* PC以上：3列 */
+@media (min-width: 1024px) {
+    .li {
+        flex: 1 1 calc(33.333% - 1rem);
+        max-width: calc(33.333% - 1rem);
+    }
 }

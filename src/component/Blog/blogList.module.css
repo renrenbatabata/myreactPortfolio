@@ -1,17 +1,31 @@
 .blog {
-    padding: 10em 0;
+    padding: 8em 1em;
     box-sizing: border-box;
-}
-
-.ListSide {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
 }
 
 .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 2em;
+}
+
+.ListSide {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+
+/* タブレットサイズ以上：2列に */
+@media (min-width: 768px) {
+    .ListSide {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* PCサイズ以上：3列に */
+@media (min-width: 1024px) {
+    .ListSide {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

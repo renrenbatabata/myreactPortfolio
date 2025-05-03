@@ -1,8 +1,11 @@
 .cardwrap {
     margin: 20px;
-    transform: perspective(800px);
+    perspective: 800px;
+    /* 修正: transformではなく perspective プロパティに */
     transform-style: preserve-3d;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .cardwrap:hover .cardinfo {
@@ -42,8 +45,8 @@
 .card {
     position: relative;
     margin-top: 4em;
-    flex: 0 0 360px;
     width: 30vw;
+    /* 幅を動的に調整 */
     height: 60vh;
     background-color: #aee1f9;
     overflow: hidden;
@@ -53,6 +56,7 @@
         inset #87ceeb 0 0 0 5px,
         inset rgba(255, 255, 255, 0.4) 0 0 0 6px;
     transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    will-change: transform;
 }
 
 .cardbg {

@@ -7,7 +7,6 @@ function BlogCard({ blogs }) {
         <ul className={Styles.ul}>
             {blogs.map((blog) => (
                 <li key={blog.id} >
-
                     <Link href={`/blogs/${blog.id}`} className={Styles.link}>
                         <div className={Styles.imageWrapper}>
                             <Image
