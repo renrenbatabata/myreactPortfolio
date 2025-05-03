@@ -4,30 +4,17 @@ import styles from './id.module.scss';
 import Footer from "@/component/Footer/footer";
 import Image from "next/image";
 
-export const getStaticProps = async (context) => {
+// SSR
+export const getServerSideProps = async (context) => {
     const id = context.params.id;
-    const data = await client.get({ endpoint: "blogs", contentId: id })
+    const data = await client.get({ endpoint: "blogs", contentId: id });
 
     return {
         props: {
             blog: data,
-        }
-    }
-}
-
-export const getStaticPaths = async () => {
-    const data = await client.get({ endpoint: "blogs" })
-
-    const paths = data.contents.map((content) => ({
-        params: { id: content.id },
-    }))
-
-    return {
-        paths,
-        fallback: false,
-    }
-}
-
+        },
+    };
+};
 
 function BlogId({ blog }) {
     return (
@@ -44,11 +31,12 @@ function BlogId({ blog }) {
                     />
                 </div>
                 <h1 className={styles.title}>{blog.title}</h1>
-                <p className={styles.publishedAt}> {new Date(blog.publishedAt).toLocaleDateString('ja-JP', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                })}
+                <p className={styles.publishedAt}>
+                    {new Date(blog.publishedAt).toLocaleDateString("ja-JP", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                    })}
                 </p>
                 <div
                     dangerouslySetInnerHTML={{
@@ -59,7 +47,7 @@ function BlogId({ blog }) {
             </div>
             <Footer />
         </>
-    )
+    );
 }
 
-export default BlogId
+export default BlogId;
