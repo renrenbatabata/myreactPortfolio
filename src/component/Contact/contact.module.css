@@ -6,13 +6,15 @@
     flex-wrap: wrap;
 }
 
-.contact a {
+.contact .hover {
     transition: transform 0.3s ease, opacity 0.3s ease;
     display: inline-block;
     filter: brightness(0) invert(1);
+    width: 60px;
+    height: 60px;
 }
 
-.contact a:hover {
+.contact .hover:hover {
     transform: scale(1.4);
     opacity: 0.8;
 }
@@ -23,10 +25,7 @@
     fill: #ffffff;
 }
 
-.contact a {
-    width: 60px;
-    height: 60px;
-}
+
 
 @media (max-width: 600px) {
     .contact svg {
@@ -34,7 +33,7 @@
         height: 40px;
     }
 
-    .contact a {
+    .contact .hover {
         width: 40px;
         height: 40px;
     }
