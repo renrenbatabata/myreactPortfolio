@@ -1,12 +1,1 @@
-.footer {
-    background: linear-gradient(135deg, #a2d4f3d5, #f5c2e7b2);
-    text-align: center;
-    padding-top: 1em;
-}
-
-.copyright {
-    font-size: 20px;
-    padding: 2em 0 1em;
-    color: rgb(255, 255, 255);
-    text-shadow: rgba(0, 0, 0, 0.5) 0 2px 3px;
-}
+.footer{background:#214657;color:#eaf3ef;text-align:center;padding:50px 24px 26px}.footer:before{content:'Let’s make something lovely.';display:block;font-size:clamp(24px,4vw,46px);font-weight:700;letter-spacing:-.04em}.footer .copyright{font-size:11px;letter-spacing:.12em;color:#abc5c8;margin:36px 0 0}.footer :global(svg){fill:#eaf3ef}.footer :global(a){border-color:#577886}

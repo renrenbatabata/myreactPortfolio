@@ -22,7 +22,7 @@ function Myskill() {
         <div className={Styles.cardContainer}>
             <div className={Styles.titleWrapper}>
                 <h2 id='skill'>My Skill</h2>
-                <button className={Styles.infoButton} onClick={handleShow}>？</button>
+                <button className={Styles.infoButton} onClick={handleShow} aria-label="スキルの星評価について" aria-expanded={showBubble}>？</button>
                 {showBubble && (
                     <div className={Styles.bubble}>
                         <p>★☆☆☆☆ | 初心者 | 触ったことがある／学習中。実務・開発経験はまだ浅い。</p>

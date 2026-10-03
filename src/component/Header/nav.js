@@ -1,44 +1,15 @@
-import { useState } from "react";
-import Link from "next/link";
-import NavStyles from "./nav.module.css";
-
-const Nav = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const onToggleBtn = () => {
-        setIsOpen(!isOpen);
-    };
-
-    return (
-        <>
-            <nav className={`${NavStyles.nav} ${isOpen ? NavStyles.open : ""}`}>
-                <div className={NavStyles.navArea}>
-                    <div className={NavStyles.inner}>
-                        <ul className={NavStyles.ul}>
-                            <li><Link href="/">Top</Link></li>
-                            <li><Link href="/#about">About</Link></li>
-                            <li><Link href="/#skill">Skill</Link></li>
-                            <li><Link href="/#journey">Journey</Link></li>
-                            <li><Link href="/#blog">Blog</Link></li>
-                            <li><Link href="/email">Contact</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <div className={`${NavStyles.toggle_btn} ${isOpen ? NavStyles.open : ""}`} onClick={onToggleBtn}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            {isOpen && (
-                <button className={NavStyles.close_btn} onClick={() => setIsOpen(false)}></button>
-            )}
-
-            <div className={`${NavStyles.mask} ${isOpen ? NavStyles.show : ""}`} onClick={() => setIsOpen(false)}></div>
-        </>
-    );
-};
-
-export default Nav;
+import { useState } from 'react';
+import Link from 'next/link';
+import styles from './nav.module.css';
+const links=[['About','/#about'],['Skills','/#skill'],['Journey','/#journey'],['Blog','/#blog']];
+export default function Nav(){
+ const [open,setOpen]=useState(false);
+ return <nav className={styles.nav} aria-label="メインナビゲーション">
+  <Link href="/" className={styles.logo} onClick={()=>setOpen(false)}>renren<span className={styles.dot}>.</span></Link>
+  <button className={styles.menu} aria-label={open?'メニューを閉じる':'メニューを開く'} aria-expanded={open} aria-controls="main-links" onClick={()=>setOpen(!open)}>{open?'閉じる ☓':'メニュー ☰'}</button>
+  <div id="main-links" className={`${styles.links} ${open?styles.open:''}`}>
+   {links.map(([name,href])=><Link key={name} href={href} onClick={()=>setOpen(false)}>{name}</Link>)}
+   <Link href="/email" className={styles.contact} onClick={()=>setOpen(false)}>Contact <span aria-hidden="true">↗</span></Link>
+  </div>
+ </nav>
+}
