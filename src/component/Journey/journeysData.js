@@ -1,7 +1,7 @@
 //確定情報
 const confirmedJourneys = [
     {
-        "title": "れんれん生誕",
+        "title": "Karen生誕",
         "date": "2004-06-01",
         "timelineContent": "大雨の嵐の中、産声をあげたそうです。"
     },

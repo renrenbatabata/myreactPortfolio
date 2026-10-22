@@ -203,7 +203,7 @@ yarn lint
 
 ## 👤 作者
 
-K. Kasubata
+Karen / mirelio.
 
 ---
 

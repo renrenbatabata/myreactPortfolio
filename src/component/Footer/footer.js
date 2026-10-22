@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className={Styles.footer}>
             <Contact />
-            <p className={Styles.copyright}>©2025renren</p>
+            <p className={Styles.copyright}>©2025 mirelio.</p>
         </footer>
     )
 }

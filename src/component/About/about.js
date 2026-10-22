@@ -11,7 +11,7 @@ function About() {
                 <Love />
                 <div className={Styles.section}>
                     <p>
-                        はじめまして。専門学校でWeb開発を学んでいる<strong>れんれん</strong>です。<br />
+                        はじめまして。専門学校でWeb開発を学んでいる<strong>Karen</strong>です。<br />
                         現在はフロントエンドエンジニアを目指して、Reactを中心に学習を進めています。
                     </p>
                     <p>
