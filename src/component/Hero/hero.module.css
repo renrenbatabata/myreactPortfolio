@@ -10,9 +10,8 @@
 .inner{max-width:1180px;margin:auto;padding:82px 42px 98px;min-height:640px;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:68px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0;padding:5px 13px;border:1px solid #e6d6ef;border-radius:99px;background:#fff9;color:var(--blue);font-size:11px;font-weight:900;letter-spacing:.16em}
 .sparkle{font-size:17px;line-height:1.3;color:var(--rose)}
-.copy h1{font-size:clamp(44px,6.5vw,81px);letter-spacing:-.07em;line-height:1.19;margin:25px 0;color:var(--ink);font-weight:900}
-.copy h1 em{font-style:normal;color:var(--blue);text-decoration:underline .12em #ecc5e4;text-underline-offset:.09em;text-decoration-skip-ink:none}
-.intro{font-size:15px;line-height:2.04;color:var(--muted)}
+.screenReaderOnly{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.intro{margin:20px 0 0;font-size:15px;line-height:2.04;color:var(--muted)}
 .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 .actions a{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;border-radius:100px;padding:11px 17px;font-size:13px;font-weight:900;transition:background .2s,transform .2s}
 .primary{background:var(--blue);color:#fff;box-shadow:0 5px 0 #cbd6ef}
@@ -36,7 +35,6 @@
 }
 @media(max-width:500px){
   .inner{padding:43px 20px 50px}
-  .copy h1{font-size:clamp(38px,11.4vw,56px);margin:21px 0}
   .intro{font-size:14px}
   .note{margin-top:23px}
   .sticker{right:-6px;bottom:-8px;width:69px;height:69px;font-size:11px}

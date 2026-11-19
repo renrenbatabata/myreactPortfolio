@@ -4,7 +4,7 @@ export default function Hero(){return <section className={styles.hero} id="top">
  <div className={styles.inner}>
   <div className={styles.copy}>
    <p className={styles.eyebrow}><span className={styles.sparkle}>✳</span> HELLO, I&apos;M KAREN</p>
-   <h1>好奇心を、<br/><em>かたちにする。</em></h1>
+   <h1 className={styles.screenReaderOnly}>Karenのポートフォリオ</h1>
    <p className={styles.intro}>はじめまして、Karenです。<br/>アイデアを考えることも、使いやすい画面をつくることも好き。<br/>わくわくする体験を、Webの力で届けたいと思っています。</p>
    <div className={styles.actions}><a className={styles.primary} href="#about">私について <span aria-hidden="true">↗</span></a><a className={styles.secondary} href="#blog">つくったものを見る <span aria-hidden="true">↘</span></a></div>
    <p className={styles.note}>FRONTEND DEVELOPER / CREATIVE THINKER</p>
