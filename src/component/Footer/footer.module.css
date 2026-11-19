@@ -1,1 +1,3 @@
-.footer{background:#214657;color:#eaf3ef;text-align:center;padding:50px 24px 26px}.footer:before{content:'Let’s make something lovely.';display:block;font-size:clamp(24px,4vw,46px);font-weight:700;letter-spacing:-.04em}.footer .copyright{font-size:11px;letter-spacing:.12em;color:#abc5c8;margin:36px 0 0}.footer :global(svg){fill:#eaf3ef}.footer :global(a){border-color:#577886}
+.footer{background:#e7eaff;color:#344966;text-align:center;padding:50px 24px 26px}.footer:before{content:'Let’s make something lovely.';display:block;font-size:clamp(24px,4vw,46px);font-weight:700;letter-spacing:-.04em}.footer .copyright{font-size:11px;letter-spacing:.12em;color:#586a86;margin:36px 0 0}.footer :global(svg){fill:#344966}.footer :global(a){border-color:#ccd9f5}
+
+.footer{background:var(--pastel-ribbon);border-top:1px solid #e2d6ed}.footer:before{font-weight:900}

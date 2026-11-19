@@ -1,1 +1,3 @@
-.contact{display:flex;justify-content:center;gap:12px;margin:36px auto}.hover{width:43px;height:43px;border:1px solid #bfd2d4;border-radius:50%;display:grid;place-items:center;transition:background .2s,transform .2s}.hover:hover{background:#dcefeb;transform:translateY(-3px)}.contact svg{width:18px;height:18px;fill:#315f70}
+.contact{display:flex;justify-content:center;gap:12px;margin:36px auto}.hover{width:43px;height:43px;border:1px solid #cedcf2;border-radius:50%;display:grid;place-items:center;transition:background .2s,transform .2s}.hover:hover{background:#f5ddeb;transform:translateY(-3px)}.contact svg{width:18px;height:18px;fill:#37587f}
+
+.hover{background:#fffbfe;width:44px;height:44px}@media(prefers-reduced-motion:reduce){.hover{transition:none}.hover:hover{transform:none}}

@@ -1,1 +1,16 @@
-.card{position:relative;z-index:1;width:min(100%,390px);aspect-ratio:4/4.5;padding:22px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid #d4e6e3;background:linear-gradient(160deg,#c7e5e9,#a7d2df);border-radius:28px;box-shadow:18px 22px 0 #fff,18px 30px 46px #53778727;transform:rotate(3deg);transition:transform .35s}.card:hover{transform:rotate(0) translateY(-7px)}.corner{font-size:10px;font-weight:700;letter-spacing:.18em;color:#326276}.avatar{object-fit:contain;width:100%;height:65%;filter:drop-shadow(0 14px 12px #356b8430)}.label{display:flex;justify-content:space-between;align-items:flex-end;gap:8px;color:#1c465b}.label strong{font-size:37px;letter-spacing:-.07em}.label span{font-size:10px;max-width:120px;text-align:right;line-height:1.4}
+.card{
+  position:relative;z-index:1;width:min(90%,365px);aspect-ratio:4/4.6;padding:18px;
+  display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:10px;
+  border:5px solid #aee1f9;outline:1px solid #b5d7ee;
+  background:radial-gradient(ellipse at 40% 42%,#fff 5%,#eefaff 60%,#daf0ff 100%);
+  border-radius:18px;box-shadow:inset 0 0 0 2px #fff,10px 12px 0 #fff,12px 18px 32px #385d8526;
+  transform:rotate(3deg);transition:transform .35s ease;
+}
+.corner{font-size:10px;font-weight:900;letter-spacing:.16em;color:var(--blue);width:max-content;padding:4px 8px;border-radius:99px;background:#fff;border:1px solid #d0e6f6}
+.avatar{object-fit:contain;width:100%;height:100%;min-height:0;filter:drop-shadow(0 10px 9px #356b842a)}
+.label{display:flex;justify-content:space-between;align-items:flex-end;gap:8px;color:#274365;border-top:1px dashed #a8cfe9;padding-top:6px}
+.label strong{font-size:clamp(27px,5vw,38px);letter-spacing:-.055em;line-height:1.06}
+.label span{font-size:10px;max-width:115px;text-align:right;line-height:1.35;font-weight:700}
+@media(hover:hover){.card:hover{transform:perspective(800px) rotateX(4deg) rotateY(-7deg) rotateZ(0) translateY(-5px)}}
+@media(max-width:430px){.card{padding:12px;gap:5px}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:rotate(3deg)}}

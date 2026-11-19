@@ -1,3 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
-:root{--ink:#172c3b;--muted:#607484;--blue:#426d88;--line:#dbe7e9;--cream:#f8faf8;--surface:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans','Noto Sans JP',sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:#b9dfe2;color:#183342}a:focus-visible,button:focus-visible{outline:3px solid #3886a4;outline-offset:4px}
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap');
+
+:root {
+  --ink:#263650;
+  --muted:#53627c;
+  --blue:#315780;
+  --blue-soft:#dbefff;
+  --pink-soft:#fbe1ef;
+  --rose:#8d4369;
+  --line:#d8dfef;
+  --cream:#fffcfe;
+  --surface:#fff;
+  --pastel-ribbon:linear-gradient(108deg,#d6efff 0%,#eae6fc 55%,#f8d9ec 100%);
+  --pastel-shadow:0 12px 30px #52699517;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Hiragino Sans',Meiryo,sans-serif;font-weight:500;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit}
+::selection{background:#e9d9fb;color:var(--ink)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #516fa6;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

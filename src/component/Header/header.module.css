@@ -1,1 +1,1 @@
-.header{position:sticky;top:0;z-index:100;background:rgba(248,250,248,.94);border-bottom:1px solid rgba(219,231,233,.9);backdrop-filter:blur(18px)}
+.header{position:sticky;top:0;z-index:100;background:var(--pastel-ribbon);border-bottom:1px solid #e4d6ee;box-shadow:0 3px 18px #465c8b13}
