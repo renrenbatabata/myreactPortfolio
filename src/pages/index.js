@@ -6,6 +6,7 @@ import Myskill from "@/component/Myskill/myskill"
 import Footer from "@/component/Footer/footer"
 import Hero from "@/component/Hero/hero"
 import About from "@/component/About/about"
+import PortfolioMotion from "@/component/portfolioMotion"
 
 // SSR
 export const getServerSideProps = async () => {
@@ -25,6 +26,7 @@ const App = ({ blogs, journeys }) => {
 
   return (
     <>
+      <PortfolioMotion />
       <Header />
       <Hero />
       <About />

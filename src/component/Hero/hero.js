@@ -4,7 +4,7 @@ import styles from './hero.module.css';
 export default function Hero() {
  return (
   <section className={styles.hero} id="top" aria-labelledby="portfolio-title">
-   <div className={styles.sheet}>
+   <div className={styles.sheet} data-portfolio-motion>
     <div className={styles.visual}>
      <Card image="/icon.png" />
     </div>
