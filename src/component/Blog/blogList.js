@@ -4,7 +4,7 @@ function BlogList({ blogs }) {
     return (
 
         <div className={Styles.blog}>
-            <h2 className={Styles.title} id='blog'>Blog</h2>
+            <h2 className={Styles.title} id='blog'>作品・ブログ</h2>
             <div className={Styles.ListSide}>
                 <BlogCard blogs={blogs} />
             </div>

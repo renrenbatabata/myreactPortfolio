@@ -1,21 +1,22 @@
 import Styles from "./myskillCard.module.css"
-import skillData from "./skillData"
+import skillGroups from "./skillData"
 
-function MyskillCard() {
+export default function MyskillCard() {
     return (
-        <>
-            <ul className={Styles.cardList}>
-                {skillData.map((skill, index) => (
-                    <li className={Styles.card} key={index}>
-                        <div className={Styles.icon}>{skill.icon}</div>
-                        <h2>{skill.name}</h2>
-                        <p>{skill.level}</p>
-                        <p>{skill.description}</p>
-                    </li>
-                ))}
-            </ul>
-        </>
+        <div className={Styles.groups}>
+            {skillGroups.map(({ title, skills }) => (
+                <section className={Styles.group} key={title}>
+                    <h3>{title}</h3>
+                    <dl className={Styles.skills}>
+                        {skills.map(({ name, description }) => (
+                            <div key={name}>
+                                <dt>{name}</dt>
+                                <dd>{description}</dd>
+                            </div>
+                        ))}
+                    </dl>
+                </section>
+            ))}
+        </div>
     )
 }
-
-export default MyskillCard

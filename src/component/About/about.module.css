@@ -1,8 +1,67 @@
-.about{max-width:1180px;margin:auto;padding:112px 32px;display:grid;grid-template-columns:.7fr 1.3fr;gap:38px 86px;align-items:start}.about>h2{font-size:clamp(38px,5vw,64px);letter-spacing:-.065em;line-height:1;margin:0}.about>h2:before{content:'01 / WHO I AM';display:block;font-size:11px;letter-spacing:.2em;color:#785987;margin-bottom:25px}.section{grid-column:2;grid-row:1 / span 2;border-top:1px solid #d6dff2;padding-top:30px}.section p{font-size:15px;line-height:2.2;color:#53627c;margin:0 0 22px}.section p:first-child{font-size:21px;line-height:1.8;color:#263650;font-weight:600}.section strong{color:#7c4669}.about>div:last-child{grid-column:2;margin:0;justify-content:flex-start}@media(max-width:780px){.about{grid-template-columns:1fr;padding:80px 24px;gap:28px}.section{grid-column:1;grid-row:auto}.about>div:last-child{grid-column:1}}
+.about {
+    max-width: 1180px;
+    margin: auto;
+    padding: 96px 32px;
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 24px clamp(32px, 7vw, 86px);
+    align-items: start;
+}
 
-.section{border-top-style:dashed}.about>h2,.section p:first-child{font-weight:900}@media(max-width:700px){.about{padding-block:64px}}
-.about{position:relative;isolation:isolate}
-.about:before{
- content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
- background:radial-gradient(circle at 9% 18%,#f6dbe970 0 22px,transparent 23px),radial-gradient(circle at 16% 13%,#e9e1f983 0 8px,transparent 9px),radial-gradient(circle at 93% 78%,#d7edf99c 0 27px,transparent 28px)
+.about > h2 {
+    font-size: clamp(32px, 5vw, 54px);
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.section {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    border-top: 1px dashed var(--line);
+    padding-top: 20px;
+    max-width: 38rem;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--muted);
+    margin: 0 0 14px;
+}
+
+.section p:first-child {
+    font-size: clamp(20px, 3vw, 26px);
+    color: var(--ink);
+    font-weight: 900;
+}
+
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+.section strong {
+    color: var(--rose);
+}
+
+.about > div:last-child {
+    grid-column: 2;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+@media (max-width: 780px) {
+    .about {
+        grid-template-columns: 1fr;
+        padding: 64px 24px;
+    }
+
+    .section {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .about > div:last-child {
+        grid-column: 1;
+    }
 }

@@ -1,3 +1,17 @@
-.cardContainer{background:#eef5ff;padding:108px max(24px,calc((100vw - 1180px)/2))}.titleWrapper{display:flex;align-items:center;gap:14px;margin-bottom:38px;position:relative}.titleWrapper h2{font-size:clamp(38px,5vw,64px);letter-spacing:-.065em;margin:0}.titleWrapper h2:before{content:'02 / WHAT I USE';display:block;font-size:11px;letter-spacing:.2em;color:#785987;margin-bottom:18px}.infoButton{border:1px solid #a5b9de;background:transparent;border-radius:50%;height:30px;width:30px;cursor:pointer;color:#315780}.bubble{position:absolute;z-index:3;left:0;top:100%;background:white;box-shadow:0 14px 40px #495d9724;border:1px solid #d9e2f3;border-radius:16px;padding:20px;max-width:550px;font-size:12px;line-height:1.7}.bubble p{margin:4px 0}@media(max-width:700px){.cardContainer{padding:80px 24px}}
+.cardContainer {
+    padding: 96px max(24px, calc((100% - 1116px) / 2));
+    background: linear-gradient(130deg, #e9f4ff, #faedf6);
+}
 
-.cardContainer{position:relative;isolation:isolate;background:linear-gradient(130deg,#e9f4ff,#f3edff)}.cardContainer:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 6% 34%,#fff9 0 11px,transparent 12px),radial-gradient(circle at 89% 22%,#fff9 0 27px,transparent 28px),radial-gradient(circle at 95% 34%,#fff8 0 12px,transparent 13px),radial-gradient(circle at 8% 89%,#fff7 0 32px,transparent 33px)}.titleWrapper h2{font-weight:900}.infoButton{background:#fff9;min-width:44px;height:44px;font-weight:900}.bubble{max-width:min(550px,100%)}@media(max-width:700px){.cardContainer{padding-block:64px}}
+.title {
+    margin: 0 0 32px;
+    font-size: clamp(32px, 5vw, 54px);
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+@media (max-width: 700px) {
+    .cardContainer {
+        padding-block: 64px;
+    }
+}
